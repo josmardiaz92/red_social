@@ -1,0 +1,32 @@
+.header-formulario{
+    background-color: #001A6F;
+    color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 5px 10px black;
+    }
+    
+    .body-formulario{
+    background-color: #e0e2ee;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 5px 10px black;
+    }
+    
+    .cursor-pointer{ 
+      cursor: pointer;
+    }
+    
+    .btn-formulario:hover{
+      background-color: #FF8A00;
+      border: solid 1px #FF8A00;
+      color: white;
+    }
+    
+    .bg-titulo-formulario{
+      border-radius: 10px;
+
+    }
+
+    .fondo-azul {
+      background-color: #001A6F;
+      color: #ffffff;
+    }
