@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
+	<title>Editar</title>
+</head>
+<body>
+	<div class="container-fluid">	
+		<div class="row mt-4 d-flex justify-content-center">
+			<div class="col-lg-5 header-personal p-4 d-flex justify-content-center">
+				<img src="../Imagen/logo.png" class="img-fluid w-25">
+			</div>
+		</div>
+		<div class="row mb-3 d-flex justify-content-center">
+			<div class="col-lg-5 body-personal">
+				<form class="" method="" action="" enctype="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12">
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoría</h3>
+						</div>
+					</div>
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="nom_cat">Nombre:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="nom_cat" name="nom_cat" size="16" maxlength="100" placeholder="Ingrese Nombre de la categoría" value="categoría seleccionada" required>
+						</div>
+					</div>					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="des_cat">Descripción:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="des_cat" name="des_cat" size="25" maxlength="255" placeholder="Ingrese Descripción de la categoría" value="categoría seleccionada" required>
+						</div>
+					</div>					
+					
+					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
+                        <button class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit">Editar</button>	
+                        <a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="categoria_listar_josmar-peter.html">Ir al Listado</a>		
+                        <input class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="reset" value="Limpiar">					
+                </div>
+				</form>	
+			</div>
+		</div>
+	</div>
+	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
