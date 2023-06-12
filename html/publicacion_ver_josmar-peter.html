@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
+	<title>Publicación</title>
+</head>
+<body>
+	<div class="container-fluid">	
+		<div class="row mt-4 d-flex justify-content-center">
+			<div class="col-lg-5 header-personal p-4 d-flex justify-content-center">
+				<img src="../Imagen/logo.png" class="img-fluid w-25">
+			</div>
+		</div>
+		<div class="row mb-3 d-flex justify-content-center">
+			<div class="col-lg-5 body-personal">
+				<form class="" method="" action="" enctype="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12">
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Agregar Publicación</h3>
+						</div>
+					</div>
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="tit_pub">Título:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="100" placeholder="Indique el Título de la Publicación" value="titulo seleccionado" readonly>
+						</div>
+					</div>					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="des_pub">Descripción:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="des_pub" name="des_pub" size="25" maxlength="255" placeholder="Describa la Publicacíon" value="Descripción seleccionada" readonly>
+						</div>
+					</div>									
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_ciu">Ciudad:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1">América</option>
+								<option value="2">Asia</option>         <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
+								<option value="3">África</option>
+								<option value="4">Europa</option>
+								<option value="5">Oceanía</option>
+							</select>
+						</div>
+					</div>
+                    
+                    <div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_per">Persona:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1">América</option>
+								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
+								<option value="3">África</option>
+								<option value="4">Europa</option>
+								<option value="5">Oceanía</option>
+							</select>
+						</div>
+					</div>
+
+                    <div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_tip_aco">Acontecimiento:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1">América</option>
+								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
+								<option value="3">África</option>
+								<option value="4">Europa</option>
+								<option value="5">Oceanía</option>
+							</select>
+						</div>
+					</div>
+
+                    <div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1">América</option>
+								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
+								<option value="3">África</option>
+								<option value="4">Europa</option>
+								<option value="5">Oceanía</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="est_pub">Estatus:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="est_pub" id="est_pub" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="A">Activo</option>       <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
+								<option value="I">Inactivo</option>
+							</select>
+						</div>
+					</div>
+					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
+							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="publicacion_listar_josmar-peter.html">Ir al Listado</a>					
+					</div>
+				</form>	
+			</div>
+		</div>	
+	</div>
+	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
