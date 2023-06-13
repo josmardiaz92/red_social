@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
+	<link rel="icon" href="../Imagen/logo.png" type="image/x-icon">
+	<title>Editar Fan page</title>
+</head>
+<body>
+	<div class="container-fluid">	
+		<div class="row mt-4 d-flex justify-content-center">
+			<div class="col-lg-5 header-personal p-4 d-flex justify-content-center">
+				<img src="../Imagen/logo.png" class="img-fluid w-25">
+			</div>
+		</div>
+		<div class="row mb-3 d-flex justify-content-center">
+			<div class="col-lg-5 body-personal">
+				<form class="" method="" action="" enctype="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12">
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Editar Fan Page</h3>
+						</div>
+					</div>
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="nom_fan_pag">Nombre:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="nom_fan_pag" name="nom_fan_pag" size="16" maxlength="100" placeholder="Indique el nuevo nombre de la Fan page" required>
+						</div>
+					</div>					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="des_fan_pag">Descripción:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="des_fan_pag" name="des_fan_pag" size="25" maxlength="255" placeholder="Nueva descripción de la Fan page" required>
+						</div>
+					</div>
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="per_fan_fan">Foto Fan Page:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="file" id="per_fan_fan" name="per_fan_fan"  placeholder="Ingrese la foto de su Fan page" required>
+						</div>
+					</div>									
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fec_fan_pag">Fecha de creacion:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="date" id="fec_fan_pag" name="fec_fan_pag"  placeholder="Fecha de la Fan Page" required>
+						</div>
+					</div>
+
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_per">Estatus:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" required>
+								<option value="">Seleccione...</option>
+								<option value="1">A (Activo y Publicado)</option>
+								<option value="2">C (Creado pero sin publicar)</option>
+							</select>
+						</div>
+					</div>
+					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
+							<button class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit">Editar</button>	
+							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="fan_page_listar_josmar-peter.html">Ir al Listado</a>		
+							<input class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="reset" value="Limpiar">					
+					</div>
+				</form>	
+			</div>
+		</div>	
+	</div>
+	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
