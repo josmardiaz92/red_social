@@ -54,7 +54,13 @@
 							<label class="form-label" for="fky_ciu">Ciudad:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="fky_ciu" name="fky_ciu" size="25" maxlength="255" placeholder="Escoja una ciudad" value="California" readonly>
+							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option selected value="1">California</option>
+								<option value="2">Manhattan</option>
+								<option value="3">Los Angeles</option>
+								<option value="4">San Francisco</option>
+							</select>
 						</div>
 					</div>	
                     
@@ -72,12 +78,12 @@
 							<label class="form-label" for="fky_tip_aco">Acontecimiento:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" readonly>
+							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" disabled>
 								<option value="">Seleccione...</option>
-								<option value="1">Entretenimiento</option>
+								<option  value="1">Entretenimiento</option>
 								<option value="2">Oferta</option>
 								<option value="3">Estudios</option>
-								<option value="4">Anuncio</option>
+								<option selected value="4">Anuncio</option>
 							</select>
 						</div>
 					</div>
