@@ -22,13 +22,21 @@
 							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Publicación</h3>
 						</div>
 					</div>
-					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fec_pub">Fecha de la publicacion:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="date" id="fec_pub" name="fec_pub"  placeholder="Fecha de la Fan Page" value="2019-07-23" readonly>
+						</div>
+					</div>
+
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="tit_pub">Título:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="100" placeholder="Indique el Título de la Publicación" value="titulo seleccionado" readonly>
+							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="50" placeholder="Indique el Título de la publicación" value="Universal Is Doing A New Terminator Movie And There Call For My Usual Role"  readonly>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -36,7 +44,7 @@
 							<label class="form-label" for="des_pub">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_pub" name="des_pub" size="25" maxlength="255" placeholder="Describa la Publicacíon" value="Descripción seleccionada" readonly>
+							<input class="form-control" type="text" id="des_pub" name="des_pub" size="25"  placeholder="Describa la Publicacíon" value="Universal Is Doing A New Terminator Movie And There Call For My Usual Role" readonly>
 						</div>
 					</div>									
 					
@@ -45,30 +53,16 @@
 							<label class="form-label" for="fky_ciu">Ciudad:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer" disabled>
-								<option value="">Seleccione...</option>
-								<option value="1">América</option>
-								<option value="2">Asia</option>         <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
-								<option value="3">África</option>
-								<option value="4">Europa</option>
-								<option value="5">Oceanía</option>
-							</select>
+							<input class="form-control" type="text" id="fky_ciu" name="fky_ciu" size="25" maxlength="255" placeholder="Escoja una ciudad" value="California" readonly>
 						</div>
-					</div>
+					</div>	
                     
                     <div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="fky_per">Persona:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" disabled>
-								<option value="">Seleccione...</option>
-								<option value="1">América</option>
-								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
-								<option value="3">África</option>
-								<option value="4">Europa</option>
-								<option value="5">Oceanía</option>
-							</select>
+							<input class="form-control" type="text" id="fky_per" name="fky_per" size="25" maxlength="255" placeholder="A quien le pertenece la publicacion"  value="Arnold Schwarzenegger" readonly>
 						</div>
 					</div>
 
@@ -77,30 +71,22 @@
 							<label class="form-label" for="fky_tip_aco">Acontecimiento:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" disabled>
+							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" readonly>
 								<option value="">Seleccione...</option>
-								<option value="1">América</option>
-								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
-								<option value="3">África</option>
-								<option value="4">Europa</option>
-								<option value="5">Oceanía</option>
+								<option value="1">Entretenimiento</option>
+								<option value="2">Oferta</option>
+								<option value="3">Estudios</option>
+								<option value="4">Anuncio</option>
 							</select>
 						</div>
 					</div>
 
                     <div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
+							<label class="form-label" for="fky_fan_page">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" disabled>
-								<option value="">Seleccione...</option>
-								<option value="1">América</option>
-								<option value="2">Asia</option>     <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
-								<option value="3">África</option>
-								<option value="4">Europa</option>
-								<option value="5">Oceanía</option>
-							</select>
+							<input class="form-control" type="text" id="fky_fan_page" name="fky_fan_page" size="25" maxlength="255" placeholder="A que Fan page pertenece la publicacion" value="Arnold Schwarzenegger" readonly>
 						</div>
 					</div>
 					
@@ -111,8 +97,9 @@
 						<div class="col-sm-12 col-md-7">
 							<select name="est_pub" id="est_pub" class="form-select cursor-pointer" disabled>
 								<option value="">Seleccione...</option>
-								<option value="A">Activo</option>       <!-- todo Aca hay que seleccionar la opcion que se quiere mostrar -->
-								<option value="I">Inactivo</option>
+								<option selected value="A">(A) Publicado y visible</option>
+								<option value="P">(P) Programada para ser publicada</option>
+								<option value="S">(E) eliminado por la persona</option>
 							</select>
 						</div>
 					</div>
