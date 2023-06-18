@@ -29,7 +29,7 @@
 							<label class="form-label" for="tit_pub">Título:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="50" placeholder="Indique el nuevo título de la publicación" required>
+							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="50" placeholder="Indique el título de la publicación" value="New terminator movie. spoiler I am in." required>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -37,7 +37,7 @@
 							<label class="form-label" for="des_pub">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_pub" name="des_pub" size="25"  placeholder="Describa nuevamente la Publicacíon" required>
+							<input class="form-control" type="text" id="des_pub" name="des_pub" size="25"  placeholder="Describa la Publicacíon" value="Universal is doing a new Terminator movie and there call for my usual role" required>
 						</div>
 					</div>									
 					
@@ -48,7 +48,7 @@
 						<div class="col-sm-12 col-md-7">
 							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option  value="1">California</option>
+								<option value="1" selected>California</option>
 								<option value="2">Manhattan</option>
 								<option value="3">Los Angeles</option>
 								<option value="4">San Francisco</option>
@@ -61,7 +61,7 @@
 							<label class="form-label" for="fky_per">Persona:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="fky_per" name="fky_per" size="25" maxlength="255" placeholder="A quien le pertenece la publicacion" required>
+							<input class="form-control" type="text" id="fky_per" name="fky_per" size="25" maxlength="255" placeholder="A quien le pertenece la publicacion" value="Arnold Schwarzenegger" required>
 						</div>
 					</div>
 
@@ -72,7 +72,7 @@
 						<div class="col-sm-12 col-md-7">
 							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option value="1">Entretenimiento</option>
+								<option value="1" selected>Entretenimiento</option>
 								<option value="2">Oferta</option>
 								<option value="3">Estudios</option>
 								<option value="4">Anuncio</option>
@@ -85,7 +85,7 @@
 							<label class="form-label" for="fky_fan_page">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="fky_fan_page" name="fky_fan_page" size="25" maxlength="255" placeholder="A que Fan page pertenece la publicacion" required>
+							<input class="form-control" type="text" id="fky_fan_page" name="fky_fan_page" size="25" maxlength="255" placeholder="A que Fan page pertenece la publicacion" value="Arnold Schwarzenegger" required>
 						</div>
 					</div>
 					
@@ -96,9 +96,8 @@
 						<div class="col-sm-12 col-md-7">
 							<select name="est_pub" id="est_pub" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option value="A">(A) Publicado y visible</option>
-								<option value="P">(P) Programada para ser publicada</option>
-								<option value="S">(E) eliminado por la persona</option>
+								<option value="A" selected>Pública</option>
+								<option value="P">Privada</option>
 							</select>
 						</div>
 					</div>

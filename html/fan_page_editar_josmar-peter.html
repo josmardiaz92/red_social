@@ -28,7 +28,7 @@
 							<label class="form-label" for="nom_fan_pag">Nombre:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="nom_fan_pag" name="nom_fan_pag" size="16" maxlength="100" placeholder="Indique el nuevo nombre de la Fan page" required>
+							<input class="form-control" type="text" id="nom_fan_pag" name="nom_fan_pag" size="16" maxlength="100" placeholder="Indique el nombre de la Fan page" value="OXXO" required>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -36,23 +36,16 @@
 							<label class="form-label" for="des_fan_pag">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_fan_pag" name="des_fan_pag" size="25" maxlength="255" placeholder="Nueva descripción de la Fan page" required>
+							<input class="form-control" type="text" id="des_fan_pag" name="des_fan_pag" size="25" maxlength="255" placeholder="Descripción de la Fan page" value=" 	Ésta es la página oficial de OXXO. Aquí podrás enterarte de promociones, descuentos y nuevos productos. Te invitamos a consultar las políticas de uso." required>
 						</div>
 					</div>
-					<div class="row m-3 d-flex justify-content-center align-items-end">
+					<div class="row m-3 d-flex justify-content-center align-items-center">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="per_fan_fan">Foto Fan Page:</label>
 						</div>
-						<div class="col-sm-12 col-md-7">
+						<div class="col-sm-12 col-md-7 text-center">
+							<img src="../Imagen/oxxo.png" class="logo-personal" alt="Logo">
 							<input class="form-control" type="file" id="per_fan_fan" name="per_fan_fan"  placeholder="Ingrese la foto de su Fan page" required>
-						</div>
-					</div>									
-					<div class="row m-3 d-flex justify-content-center align-items-end">
-						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fec_fan_pag">Fecha de creacion:</label>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="date" id="fec_fan_pag" name="fec_fan_pag"  placeholder="Fecha de la Fan Page" required>
 						</div>
 					</div>
 
@@ -63,8 +56,8 @@
 						<div class="col-sm-12 col-md-7">
 							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option value="1">A (Activo y Publicado)</option>
-								<option value="2">C (Creado pero sin publicar)</option>
+								<option value="1">Publicar</option>
+								<option value="2">Guardar Borrador</option>
 							</select>
 						</div>
 					</div>
