@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
-    <link rel="icon" href="../Imagen/logo.png" type="image/x-icon">
-	<title>Ver Categoría</title>
+	<link rel="icon" href="../Imagen/logo.png" type="image/x-icon">
+	<title>Editar Seguidor</title>
 </head>
 <body>
 	<div class="container-fluid">	
@@ -20,10 +20,9 @@
 				<form class="" method="" action="" enctype="">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
-							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoría</h3>
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos del Seguidor</h3>
 						</div>
 					</div>
-					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="fec_seg">Fecha de la Union:</label>
@@ -31,37 +30,53 @@
 						<div class="col-sm-12 col-md-7">
 							<input class="form-control" type="date" id="fec_seg" name="fec_seg"  placeholder="Fecha de la Union" value="2023-06-20" readonly>
 						</div>
-					</div>					
+					</div>
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="fky_per">Persona:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="fky_per" name="fky_per" size="25" maxlength="255" placeholder="Persona" value="Pablo escobar" readonly>
-						</div>
-					</div>					
-					<div class="row m-3 d-flex justify-content-center align-items-end">
-						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fky_fan_page">Fan Page:</label>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="fky_fan_page" name="fky_fan_page" size="25" maxlength="255" placeholder="Fan page" value="The Boys" readonly>
+							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1" selected>Arnold Schwarzenegger</option>
+								<option value="2">Nintendo</option>
+								<option value="3">OXXO</option>
+								<option value="4">Avon</option>
+								<option value="5">Harvard University</option>
+							</select>
 						</div>
 					</div>
-                    <div class="row m-3 d-flex justify-content-center align-items-end">
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="est_seg">Notificaciones:</label>
+							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1" selected>Arnold Schwarzenegger</option>
+								<option value="2">Nintendo</option>
+								<option value="3">OXXO</option>
+								<option value="4">Avon</option>
+								<option value="5">Harvard University</option>
+							</select>
+						</div>
+					</div>					
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="est_seg">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
 							<select name="est_seg" id="est_seg" class="form-select cursor-pointer" disabled>
 								<option value="">Seleccione...</option>
-								<option selected value="1">C</option>
-								<option value="2">N</option>
+								<option value="A" selected>Activo</option>
+								<option value="I">Inactivo</option>
 							</select>
 						</div>
 					</div>
-					<div class="row m-4 p-0 g-0 d-flex justify-content-center">	
-							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="seguidor_listar_josmar-peter.html">Ir al Listado</a>					
+					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
+						<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="seguidor_listar_josmar-peter.html">Ir al Listado</a>							
 					</div>
 				</form>	
 			</div>

@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
 	<link rel="icon" href="../Imagen/logo.png" type="image/x-icon">
-	<title>Ver Categoría</title>
+	<title>Ver Categoria Fan Page</title>
 </head>
 <body>
 	<div class="container-fluid">	
@@ -20,41 +20,42 @@
 				<form class="" method="" action="" enctype="">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
-							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoría</h3>
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoria de Fan Page</h3>
 						</div>
-					</div>
+					</div>					
 					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="nom_cat">Nombre:</label>
+							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="nom_cat" name="nom_cat" size="16" maxlength="25" placeholder="Ingrese Nombre de la categoría" value="Empresa O Negocio" readonly>
+							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" disabled>
+								<option value="">Seleccione...</option>
+								<option value="1" selected>The Boys</option>
+								<option value="2">Friends</option>
+								<option value="3">La bella china</option>
+								<option value="4">Farmatodo Venezuela</option>
+								<option value="5">La Policlinica</option>
+							</select>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="des_cat">Descripción:</label>
+							<label class="form-label" for="fky_cat">Categoría:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_cat" name="des_cat" size="25" maxlength="1000" placeholder="Ingrese Descripción de la categoría" value="Esta Categoría Es Para Empresas Que Ofrecen Productos O Servicios" readonly>
-						</div>
-					</div>
-					<div class="row m-3 d-flex justify-content-center align-items-end">
-						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="est_cat">Estatus:</label>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<select name="est_cat" id="est_cat" class="form-select cursor-pointer" disabled>
+							<select name="fky_cat" id="fky_cat" class="form-select cursor-pointer" disabled>
 								<option value="">Seleccione...</option>
-								<option value="A" selected>Activo</option>
-								<option value="I">Inactivo</option>
+								<option value="1">Educacion</option>
+								<option value="2">Local</option>
+								<option value="3">Politica</option>
+								<option value="4" selected>entretenimiento</option>
+								<option value="5">Servicios profesionales</option>
 							</select>
 						</div>
-					</div>				
-					
+					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">	
-							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="categoria_listar_josmar-peter.html">Ir al Listado</a>					
+							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="categoria_fan_page_listar_josmar-peter.html">Ir al Listado</a>			
 					</div>
 				</form>	
 			</div>

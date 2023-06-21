@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../Estilos/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../Estilos/css-personalizados/estilos-vistas.css">
 	<link rel="icon" href="../Imagen/logo.png" type="image/x-icon">
-	<title>Agregar Categoria Fan Page</title>
+	<title>Agregar Seguidor</title>
 </head>
 <body>
 	<div class="container-fluid">	
@@ -20,43 +20,56 @@
 				<form class="" method="" action="" enctype="">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
-							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoria de Fan Page</h3>
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos del Seguidor</h3>
 						</div>
-					</div>					
-					
+					</div>
 					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="fky_per">Persona:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" required>
+								<option value="">Seleccione...</option>
+								<option value="1">Arnold Schwarzenegger</option>
+								<option value="2">Nintendo</option>
+								<option value="3">OXXO</option>
+								<option value="4">Avon</option>
+								<option value="5">Harvard University</option>
+							</select>
+						</div>
+					</div>
+                    
+                    <div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
 							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option value="1">The Boys</option>
-								<option value="2">Friends</option>
-								<option value="3">La bella china</option>
-								<option value="4">Farmatodo Venezuela</option>
-								<option value="5">La Policlinica</option>
+								<option value="1">Arnold Schwarzenegger</option>
+								<option value="2">Nintendo</option>
+								<option value="3">OXXO</option>
+								<option value="4">Avon</option>
+								<option value="5">Harvard University</option>
 							</select>
 						</div>
 					</div>					
+					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fky_cat">Categoría:</label>
+							<label class="form-label" for="est_seg">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_cat" id="fky_cat" class="form-select cursor-pointer" required>
+							<select name="est_seg" id="est_seg" class="form-select cursor-pointer" required>
 								<option value="">Seleccione...</option>
-								<option value="1">Educacion</option>
-								<option value="2">Local</option>
-								<option value="3">Politica</option>
-								<option value="4">entretenimiento</option>
-								<option value="5">Servicios profesionales</option>
+								<option value="A">Activo</option>
+								<option value="I">Inactivo</option>
 							</select>
 						</div>
 					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
 							<button class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit">Agregar</button>	
-							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="categoria_fan_page_listar_josmar-peter.html">Ir al Listado</a>		
+							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="seguidor_listar_josmar-peter.html">Ir al Listado</a>		
 							<input class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="reset" value="Limpiar">					
 					</div>
 				</form>	
