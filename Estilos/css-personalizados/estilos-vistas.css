@@ -34,3 +34,12 @@
     .logo-personal {
       height: 40px;
     }
+
+    .navbar {
+      position: sticky;  /* *esto es para que la barra se quede arriba */
+      top: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
