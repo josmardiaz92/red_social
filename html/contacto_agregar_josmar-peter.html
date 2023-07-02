@@ -98,20 +98,22 @@
 							<label class="form-label" for="des_con">Contacto:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_con" name="des_con" size="16" maxlength="100" placeholder="Email---Teléfono---pagina web" required>
+							<input class="form-control casilla validar" type="text" id="des_con" name="des_con" size="16" maxlength="100" placeholder="Email---Teléfono---pagina web" title="Ejemplos: nombre@correo.com 0414-1234568 www.nombre.com" required>
 						</div>
+						<span></span>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
 							<label class="form-label" for="fky_tip_con">Tipo de Contacto:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_tip_con" id="fky_tip_con" class="form-select cursor-pointer" required>
+							<select name="fky_tip_con" id="fky_tip_con" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="1">Teléfono</option>
 								<option value="2">Correo electrónico</option>
 								<option value="3">Pagina web</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
                     
@@ -120,7 +122,7 @@
 							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer" required>
+							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="1">Arnold Schwarzenegger</option>
 								<option value="2">Nintendo</option>
@@ -128,6 +130,7 @@
 								<option value="4">Avon</option>
 								<option value="5">Harvard University</option>
 							</select>
+							<span></span>
 						</div>
 					</div>					
 					
@@ -136,11 +139,12 @@
 							<label class="form-label" for="est_con">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_con" id="est_con" class="form-select cursor-pointer" required>
+							<select name="est_con" id="est_con" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="A">Activo</option>
 								<option value="I">Inactivo</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
@@ -153,5 +157,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+	<script src="../Javascript/validacion.js"></script>
 </body>
 </html>

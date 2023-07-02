@@ -98,7 +98,8 @@
 							<label class="form-label" for="nom_fan_pag">Nombre:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="nom_fan_pag" name="nom_fan_pag" size="16" maxlength="100" placeholder="Indique el nombre de la Fan page" required>
+							<input class="form-control casilla validar" type="text" id="nom_fan_pag" name="nom_fan_pag" size="16" maxlength="100" placeholder="Indique el nombre de la Fan page" required>
+							<span></span>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -106,7 +107,8 @@
 							<label class="form-label" for="des_fan_pag">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_fan_pag" name="des_fan_pag" size="25" maxlength="1000" placeholder="Describa la Fan page" required>
+							<input class="form-control casilla validar" type="text" id="des_fan_pag" name="des_fan_pag" size="25" maxlength="1000" placeholder="Describa la Fan page" required>
+							<span></span>
 						</div>
 					</div>
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -114,7 +116,8 @@
 							<label class="form-label" for="per_fan_pag">Foto Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="file" id="per_fan_pag" maxlength="255" name="per_fan_pag"  placeholder="Ingrese la foto de su Fan page" required>
+							<input class="form-control validar" type="file" id="per_fan_pag" maxlength="255" name="per_fan_pag"  placeholder="Ingrese la foto de su Fan page" title="La foto debe ser en formato png, jpg, jpeg o svg" required>
+							<span></span>
 						</div>
 					</div>									
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -122,11 +125,12 @@
 							<label class="form-label" for="est_fan_pag">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_fan_pag" id="est_fan_pag" class="form-select cursor-pointer" required>
+							<select name="est_fan_pag" id="est_fan_pag" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="1">Publicar</option>
 								<option value="2">Guardar Borrador</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
@@ -139,5 +143,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+	<script src="../Javascript/validacion.js"></script>
 </body>
 </html>

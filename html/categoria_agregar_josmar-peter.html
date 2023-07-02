@@ -97,7 +97,8 @@
 							<label class="form-label" for="nom_cat">Nombre:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="nom_cat" name="nom_cat" size="16" maxlength="25" placeholder="Ingrese Nombre de la categoría">
+							<input class="form-control validar casilla" type="text" id="nom_cat" name="nom_cat" size="16" maxlength="25" placeholder="Ingrese El Nombre de la categoría" title="Ingrese El Nombre de la categoría" required>
+                            <span></span>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -105,7 +106,8 @@
 							<label class="form-label" for="des_cat">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_cat" name="des_cat" size="25" maxlength="1000" placeholder="Ingrese Descripción de la categoría">
+							<input class="form-control validar casilla" type="text" id="des_cat" name="des_cat" size="25" maxlength="1000" placeholder="Ingrese una descripción para la categoría" title="Ingrese una descripción para la categoría" required>
+                            <span></span>
 						</div>
 					</div>
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -113,11 +115,12 @@
 							<label class="form-label" for="est_cat">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_cat" id="est_cat" class="form-select cursor-pointer" required>
+							<select name="est_cat" id="est_cat" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="A">Activo</option>
 								<option value="I">Inactivo</option>
 							</select>
+                            <span></span>
 						</div>
 					</div>				
 					
@@ -131,5 +134,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+    <script src="../Javascript/validacion.js"></script>
 </body>
 </html>
