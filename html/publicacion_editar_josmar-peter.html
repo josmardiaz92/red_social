@@ -89,7 +89,7 @@
 				<form class="" method="" action="" enctype="">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
-							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Editar Publicación</h3>
+							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Publicación</h3>
 						</div>
 					</div>
 					
@@ -98,7 +98,8 @@
 							<label class="form-label" for="tit_pub">Título:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="50" placeholder="Indique el título de la publicación" value="New terminator movie. spoiler I am in." required>
+							<input class="form-control casilla validar" type="text" id="tit_pub" name="tit_pub" size="16" maxlength="50" placeholder="Indique el título de la publicación" value="New terminator movie. spoiler I am in." required>
+							<span></span>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -106,7 +107,8 @@
 							<label class="form-label" for="des_pub">Descripción:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_pub" name="des_pub" size="1000"  placeholder="Describa la Publicacíon" value="Universal is doing a new Terminator movie and there call for my usual role" required>
+							<input class="form-control casilla validar" type="text" id="des_pub" name="des_pub" size="1000"  placeholder="Describa la Publicacíon" value="Universal is doing a new Terminator movie and there call for my usual role" required>
+							<span></span>
 						</div>
 					</div>									
 					
@@ -115,13 +117,14 @@
 							<label class="form-label" for="fky_ciu">Ciudad:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer" required>
+							<select name="fky_ciu" id="fky_ciu" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="1" selected>California</option>
 								<option value="2">Manhattan</option>
 								<option value="3">Los Angeles</option>
 								<option value="4">San Francisco</option>
 							</select>
+							<span></span>
 						</div>
 					</div>	
                     
@@ -130,13 +133,14 @@
 							<label class="form-label" for="fky_per">Persona:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_per" id="fky_per" class="form-select cursor-pointer" required>
+							<select name="fky_per" id="fky_per" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="1" selected>Arnold Schwarzenegger</option>
 								<option value="2">Shigeru Miyamoto</option> 
 								<option value="3">Trivago</option>
 								<option value="4">Avon</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 
@@ -145,28 +149,30 @@
 							<label class="form-label" for="fky_tip_aco">Acontecimiento:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer" required>
+							<select name="fky_tip_aco" id="fky_tip_aco" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="1" selected>Entretenimiento</option>
 								<option value="2">Oferta</option>
 								<option value="3">Estudios</option>
 								<option value="4">Anuncio</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 
                     <div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fky_fan_page">Fan Page:</label>
+							<label class="form-label" for="fky_fan_pag">Fan Page:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_fan_page" id="fky_fan_page" class="form-select cursor-pointer" required>
+							<select name="fky_fan_pag" id="fky_fan_pag" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="1" selected>Arnold Schwarzenegger</option>
 								<option value="2">Shigeru Miyamoto</option> 
 								<option value="3">Trivago</option>
 								<option value="4">Avon</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 					
@@ -175,11 +181,12 @@
 							<label class="form-label" for="est_pub">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_pub" id="est_pub" class="form-select cursor-pointer" required>
+							<select name="est_pub" id="est_pub" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="A" selected>Pública</option>
 								<option value="P">Privada</option>
 							</select>
+							<span></span>
 						</div>
 					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
@@ -192,5 +199,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+	<script src="../Javascript/validacion.js"></script>
 </body>
 </html>

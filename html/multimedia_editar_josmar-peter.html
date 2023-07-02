@@ -98,7 +98,8 @@
 							<label class="form-label" for="url_mul">Ubicación del Archivo Multimedia:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="url_mul" maxlength="255" name="url_mul"  placeholder="Ingrese el url del archivo multimedia" value="Trailer de the Boys S3" required>
+							<input class="form-control casilla validar" type="text" id="url_mul" maxlength="255" name="url_mul"  placeholder="Ingrese el url del archivo multimedia" title="El archivo debe ser .png, .jpg, .jpeg, .svg, .mp4, .mov, .avi o .webm" value="Trailer de the Boys S3" required>
+                            <span></span>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -106,7 +107,7 @@
 							<label class="form-label" for="fky_pub">Publicación:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_pub" id="fky_pub" class="form-select cursor-pointer" required>
+							<select name="fky_pub" id="fky_pub" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="1" selected>Averigua quienes estan devuelta</option>
 								<option value="2">Para mis queridos votantes</option>
@@ -120,7 +121,7 @@
 							<label class="form-label" for="est_mul">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_mul" id="est_mul" class="form-select cursor-pointer" required>
+							<select name="est_mul" id="est_mul" class="form-select cursor-pointer casilla validar" title="Seleccione una opción" required>
 								<option value="">Seleccione...</option>
 								<option value="A" selected>Activo</option>
 								<option value="I">Inactivo</option>
@@ -137,5 +138,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+    <script src="../Javascript/validacion.js"></script>
 </body>
 </html>

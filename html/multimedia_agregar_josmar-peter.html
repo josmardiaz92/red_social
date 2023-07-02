@@ -99,7 +99,8 @@
 							<label class="form-label" for="url_mul">Ubicación del Archivo Multimedia:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="url_mul" maxlength="255" name="url_mul"  placeholder="Ingrese el url del archivo multimedia" required>
+							<input class="form-control casilla validar" type="text" id="url_mul" maxlength="255" name="url_mul"  placeholder="Ingrese el url del archivo multimedia" title="El archivo debe ser .png, .jpg, .jpeg, .svg, .mp4, .mov, .avi o .webm" required>
+                            <span></span>
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
@@ -107,12 +108,13 @@
 							<label class="form-label" for="fky_pub">Publicación:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_pub" id="fky_pub" class="form-select cursor-pointer" required>
+							<select name="fky_pub" id="fky_pub" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="1">Averigua quienes estan devuelta</option>
 								<option value="2">Para mis queridos votantes</option>
 								<option value="3">Miren las crias de mis gatitos</option>
 							</select>
+                            <span></span>
 						</div>
 					</div>
                     
@@ -121,11 +123,12 @@
 							<label class="form-label" for="est_mul">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="est_mul" id="est_mul" class="form-select cursor-pointer" required>
+							<select name="est_mul" id="est_mul" class="form-select cursor-pointer casilla validar" required>
 								<option value="">Seleccione...</option>
 								<option value="A">Activo</option>
 								<option value="I">Inactivo</option>
 							</select>
+                            <span></span>
 						</div>
 					</div>
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
@@ -138,5 +141,6 @@
 		</div>	
 	</div>
 	<script src="../Javascript/js/bootstrap.bundle.min.js"></script>
+    <script src="../Javascript/validacion.js"></script>
 </body>
 </html>
