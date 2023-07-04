@@ -8,6 +8,54 @@
 	<title>Agregar Categoría</title>
 </head>
 <body>
+    <div class="position-absolute p-3 d-none" style="top: 100px; right: 0;" id="toast">
+        <div class="alert alert-danger d-flex justify-content-center" role="alert">
+            <div class="row">
+            <strong class="text-center text-danger">
+                    ERROR
+            </strong>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-9 d-flex justify-content-center">
+                    <p class="ms-3 mt-3 text-dark" id="textoAlerta"></p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="position-absolute p-3 d-none" style="top: 100px; right: 0;" id="toast3">
+        <div class="alert alert-success d-flex justify-content-center" role="alert">
+            <div class="row">
+            <strong class="text-center text-success">
+                    BIEN
+            </strong>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-9 d-flex justify-content-center">
+                    <p class="ms-3 mt-3 text-dark" id="textoAlerta3"></p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="toast-container position-absolute p-3 d-none" style="top: 200px; right: 0;" id="toast2">
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header d-flex justify-content-center text-muted">
+                <strong class="text-center text-danger">
+                    ERROR
+                </strong>
+            </div>
+            <div class="toast-body text-muted p-0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-9 d-flex justify-content-center">
+                            <p class="ms-3 mt-3 text-dark" id="textoAlerta2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top border-3 border-bottom border-warning fondo-azul">
         <div class="container-fluid">
             <a href="#" class="navbar-brand ms-5">
@@ -85,7 +133,7 @@
 		</div>
 		<div class="row mb-3 d-flex justify-content-center">
 			<div class="col-lg-5 body-personal">
-				<form class="" method="" action="" enctype="">
+				<form class="" method="" action="" enctype="" id="formulario">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
 							<h3 class="fondo-azul text-white text-center mt-3 mx-4 p-2 bg-titulo-personal">Datos de la Categoría</h3>
@@ -125,7 +173,7 @@
 					</div>				
 					
 					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
-							<button class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit">Agregar</button>	
+							<button class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit" id="submitformulario">Agregar</button>	
 							<a class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="categoria_listar_josmar-peter.html">Ir al Listado</a>		
 							<input class="btn fondo-azul btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="reset" value="Limpiar">					
 					</div>
