@@ -1,10 +1,10 @@
 //TODO Toma de los elementos mediante la clase
 const elementos=document.querySelectorAll('.validar');
-const toast=document.getElementById('toast');
+const alerta=document.getElementById('alerta');
 const textoAlerta=document.getElementById('textoAlerta');
-const toast2=document.getElementById('toast2');
+const alerta2=document.getElementById('alerta2');
 const textoAlerta2=document.getElementById('textoAlerta2');
-const toast3=document.getElementById('toast3');
+const alerta3=document.getElementById('alerta3');
 const textoAlerta3=document.getElementById('textoAlerta3');
 
 //TODO Aca se agregan las expresiones regulares, se hace en una lista y se coloca como propiedad el id de los elementos
@@ -40,8 +40,8 @@ const expresionesRegulares = {
 //TODO en esta funcion se valida el contenido de los campos con respecto a las expresionesRegulares
 const validarCampo=(campo,valor,expresionesRegular,id)=>{
     const valido=expresionesRegular.test(valor);
-    const texto=`El campo ${id} no es valido`;
-    const texto1=`El campo ${id} es valido`;
+    const texto2=`El campo ${id} no es valido`;
+    const texto3=`El campo ${id} es valido`;
     campo.classList.toggle("casilla",!valido);
     campo.classList.toggle("is-valid", valido); //*Si valido es true, se agrega "is-valid" a la clase del elemento
     campo.classList.toggle("is-invalid", !valido); //*Si valido es false, se agrega "is-invalid" a la clase del elemento
@@ -49,14 +49,14 @@ const validarCampo=(campo,valor,expresionesRegular,id)=>{
     campo.nextElementSibling.classList.toggle("invalid-feedback", !valido); //*Si valido es false, se agrega "invalid-feedback" a la clase del siguiente elemento
     campo.nextElementSibling.innerText = valido ? " " : `Introduzca un valor válido`; //*Dependiendo del valor de valido, de agregará el primer valor para true o el 2do para false
     if(!valido){
-        aparecer(toast2,textoAlerta2,id,texto);
+        aparecer(alerta2,textoAlerta2,id,texto2);
             setTimeout(() => {
-                desaparecer(toast2);
+                desaparecer(alerta2);
             }, 3000);
     }else{
-        aparecer(toast3,textoAlerta3,id,texto1);
+        aparecer(alerta3,textoAlerta3,id,texto3);
             setTimeout(() => {
-                desaparecer(toast3);
+                desaparecer(alerta3);
             }, 3000);
     }
 };
@@ -76,9 +76,9 @@ elementos.forEach(elemento=>{
             campo.classList.add("invalida");
             campo.nextElementSibling.classList.add("invalid-feedback");
             campo.nextElementSibling.innerText = "No puede dejarlo vacío";
-            aparecer(toast,textoAlerta,id,texto);
+            aparecer(alerta,textoAlerta,id,texto);
             setTimeout(() => {
-                desaparecer(toast);
+                desaparecer(alerta);
             }, 3000);
 
         }else{
@@ -93,7 +93,7 @@ function desaparecer(elem){
         {
             if((elem.style.opacity-=0.01)<0) // como la funcion va a ser llamada recursivamente, por eso plamnteamos esta condicional
             {
-                toast.classList.add("d-none");
+                elem.classList.add("d-none");
             }
             else
             {

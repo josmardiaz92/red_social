@@ -8,53 +8,61 @@
 	<title>Agregar Categoría</title>
 </head>
 <body>
-    <div class="position-absolute p-3 d-none" style="top: 100px; right: 0;" id="toast">
-        <div class="alert alert-danger d-flex justify-content-center" role="alert">
+    <div class="position-absolute p-3" style="top: 100px; right: 0;">
+            <div class="container-fluid d-none" id="alerta">
             <div class="row">
-            <strong class="text-center text-danger">
-                    ERROR
-            </strong>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-9 d-flex justify-content-center">
-                    <p class="ms-3 mt-3 text-dark" id="textoAlerta"></p>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div class="position-absolute p-3 d-none" style="top: 100px; right: 0;" id="toast3">
-        <div class="alert alert-success d-flex justify-content-center" role="alert">
-            <div class="row">
-            <strong class="text-center text-success">
-                    BIEN
-            </strong>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-9 d-flex justify-content-center">
-                    <p class="ms-3 mt-3 text-dark" id="textoAlerta3"></p>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div class="toast-container position-absolute p-3 d-none" style="top: 200px; right: 0;" id="toast2">
-        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header d-flex justify-content-center text-muted">
-                <strong class="text-center text-danger">
-                    ERROR
-                </strong>
-            </div>
-            <div class="toast-body text-muted p-0">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-9 d-flex justify-content-center">
-                            <p class="ms-3 mt-3 text-dark" id="textoAlerta2"></p>
+                <div class="col-12 alert alert-danger" role="alert">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <strong class="text-danger d-flex justify-content-center">
+                                ERROR
+                            </strong>
+                        </div>
+                        <div class="col-12">
+                                <p class="my-3 text-dark text-capitalize text-center" id="textoAlerta">
+
+                                </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <div class="container-fluid d-none" id="alerta2">
+            <div class="row">
+                <div class="col-12 alert alert-danger" role="alert">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <strong class="text-danger d-flex justify-content-center">
+                                ERROR
+                            </strong>
+                        </div>
+                        <div class="col-12">
+                                <p class="my-3 text-dark text-capitalize text-center" id="textoAlerta2">
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid d-none" id="alerta3">
+            <div class="row">
+                <div class="col-12 alert alert-success" role="alert">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <strong class="text-success d-flex justify-content-center">
+                                ¡EXCELENTE!
+                            </strong>
+                        </div>
+                        <div class="col-12">
+                                <p class="my-3 text-dark text-capitalize text-center" id="textoAlerta3">
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
     </div>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top border-3 border-bottom border-warning fondo-azul">
         <div class="container-fluid">
