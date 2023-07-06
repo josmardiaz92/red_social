@@ -140,3 +140,9 @@ box-shadow: 0 0 10px red;
 color:red;
 display:block;
 }
+
+.campoAlertas{
+  top: 100px;
+  right: 0px;
+  /* width: 400px; */
+}
