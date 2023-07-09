@@ -1,5 +1,7 @@
 //TODO Toma de los elementos mediante la clase
 const elementos=document.querySelectorAll('.validar');
+
+//TODO toma los elementos que serviran para mostrar las validaciones
 const alerta=document.getElementById('alerta');
 const textoAlerta=document.getElementById('textoAlerta');
 const alerta2=document.getElementById('alerta2');
@@ -124,6 +126,9 @@ elementos.forEach(elemento=>{
         }
         })
     });
+
+
+
 
 function desaparecer(elem){
         elem.style.opacity=1;
