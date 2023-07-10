@@ -103,6 +103,7 @@ const validarCampo=(campo,valor,expresionesRegular,nombreCampo)=>{
 //TODO Aca es donde se ejecuta todo
 elementos.forEach(elemento=>{
     elemento.addEventListener('blur',(evento)=>{
+        
         const campo=evento.target;
         const valor=campo.value;
         const id=campo.id;
@@ -124,8 +125,18 @@ elementos.forEach(elemento=>{
         }else{
             validarCampo(campo,valor,Regexp,nombreCampo);
         }
-        })
-    });
+        //TODO aca activo el boton
+        const casillasInvalidas=document.querySelectorAll('.is-invalid').length;
+        const btnSubmit=document.getElementById('submitformulario');
+        if(casillasInvalidas>0){
+            btnSubmit.disabled=true;
+        }else{
+            btnSubmit.disabled=false;
+        }
+    })
+});
+
+
 
 
 
@@ -161,3 +172,7 @@ function aparecer(elem,campoText,text){
     })();
 }
 
+window.addEventListener("load", () => {
+    const btnSubmit = document.getElementById("submitformulario");
+    
+});
