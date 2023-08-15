@@ -1,3 +1,8 @@
+import sys
+sys.path.append('c:\\xampp\\htdocs\\Github\\redsocial-fanpage')
+
+from backend.clases.base_datos import postgres_conexion as bd
+
 
 """ #TODO clase para la tabla pais
 #*Importación de la clase de base de datos
