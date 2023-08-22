@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar País</title>
+</head>
+<body>
+    <h1>Buscar País</h1>
+
+    <form method="" action="" enctype="">
+        <div>
+            <label for="nom_pai"><b> Nombre:</b></label>
+			<input type="text" id="nom_pai" name="nom_pai" size="25" maxlength="100" placeholder="Ingrese Nombre del País">
+        </div>
+        <br>
+        <div>
+            <label for="fky_con"><b> Continente:</b></label>
+            <select name="fky_con" id="fky_con">
+                <option value="">Seleccione...</option>
+                <option value="1">América</option>
+                <option value="2">Asia</option>
+                <option value="3">Africa</option>
+                <option value="4">Europa</option>
+                <option value="5">Oceania</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="est_pai"><b>Estatus:</b></label>
+            <select name="est_pai" id="est_pai">
+                <option value="">Seleccione...</option>
+                <option value="A">Activo</option>
+                <option value="I">Inactivo</option>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            <input type="submit" value="Ver Resultado">
+			<input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+</html>

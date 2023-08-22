@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver País</title>
+</head>
+<body>
+    <h1>Ver País</h1>
+
+    <form method="" action="" enctype="">
+        <div>
+            <label for="nom_pai"><b> Nombre:</b></label>
+			<input type="text" id="nom_pai" name="nom_pai" size="25" maxlength="100" placeholder="Ingrese Nombre del País" value="Venezuela" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="des_pai"><b> Descripción:</b></label>
+			<input type="text" id="des_pai" name="des_pai" size="25" maxlength="255" placeholder="Ingrese Descripción del País" value="Republica Bolivariana de Venezuela" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="alias"><b> Alias:</b></label>
+			<input type="text" id="ali_pai" name="ali_pai" size="25" maxlength="25" placeholder="Ingrese Alias del País" value="VE" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="cti_pai"><b> Código Telefónico:</b></label>
+            <input type="number" id="cti_pai" name="cti_pai" size="5" maxlength="5" placeholder="Ingrese el Código Telefónico" value="+58" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="fky_con"><b> Continente:</b></label>
+            <select name="fky_con" id="fky_con" disabled>
+                <option value="">Seleccione...</option>
+                <option value="1" selected>América</option>
+                <option value="2">Asia</option>
+                <option value="3">Africa</option>
+                <option value="4">Europa</option>
+                <option value="5">Oceania</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="est_pai">Estatus:</label>
+            <select name="est_pai" id="est_pai" disabled>
+                <option value="">Seleccione...</option>
+                <option value="A" selected>Activo</option>
+                <option value="I">Inactivo</option>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            <a href="pais_listar.html"><input type="button" value="Ir al Listado"></a>
+        </div>
+    </form>
+</body>
+</html>
