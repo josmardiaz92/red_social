@@ -1,2 +1,3 @@
 #!C:/Python311/python.exe
-print('controlador de pais')
+print('Content-type: text\html\n\n')
+print('hola mundo')
