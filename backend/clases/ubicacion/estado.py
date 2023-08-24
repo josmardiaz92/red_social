@@ -13,7 +13,6 @@ class estado(bd.base_datos):
     def agregar(self):
         #*Llamamos a la funcion para guardar en la base de datos
         sql=f"""select ubicacion.estado_agregar('{self.nom_est}','{self.des_est}',{self.fky_pai},'{self.est_est}')"""
-        print(sql)
         self.cursor.execute(sql) #*Le decimos al cursor que deseamos ejecutar la sentencia sql
         self.conexion.commit() #*Confirmamos la ejecución de la sentencia sql
         contador=self.cursor.rowcount #*Contamos el numero de filas afectadas

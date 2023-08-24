@@ -15,7 +15,6 @@ class pais(bd.base_datos):
     def agregar(self):
         #*Llamamos a la funcion para guardar en la base de datos
         sql=f"""select ubicacion.pais_agregar('{self.nom_pai}','{self.des_pai}','{self.ali_pai}','{self.cti_pai}',{self.fky_con},'{self.est_pai}')"""
-        print(sql)
         self.cursor.execute(sql) #*Le decimos al cursor que deseamos ejecutar la sentencia sql
         self.conexion.commit() #*Confirmamos la ejecución de la sentencia sql
         contador=self.cursor.rowcount #*Contamos el numero de filas afectadas

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../../estilos/css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="../../../estilos/css/personalizados/estilos-vistas.css">
-	<title>Agregar País</title>
+	<title>Agregar Zona Horaria</title>
 </head>
 <body>
 	<div class="container-fluid">	
@@ -16,70 +16,45 @@
 		</div>
 		<div class="row mb-3 d-flex justify-content-center">
 			<div class="col-lg-8 body-personal">
-				<form class="" method="post" action="../../../../backend/controladores/ubicacion/pais.py" enctype="">
+				<form class="" method="post" action="../../../../backend/controladores/ubicacion/zona_horaria.py" enctype="">
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-12">
-							<h3 class="bg-primary text-white text-center mt-3 mx-4 p-2 bg-titulo-formulario">Datos del País</h3>
+							<h3 class="bg-primary text-white text-center mt-3 mx-4 p-2 bg-titulo-formulario">Datos de la Zona Horaria</h3>
 						</div>
 					</div>
 					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="nom_pai">Nombre:</label>
+							<label class="form-label" for="nom_zon">Nombre:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="nom_pai" name="nom_pai" size="16" maxlength="100" placeholder="Ingrese Nombre del País">
+							<input class="form-control" type="text" id="nom_zon" name="nom_zon" size="16" maxlength="100" placeholder="Ingrese Nombre de la Zona Horaria">
 						</div>
 					</div>					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="des_pai">Descripción:</label>
+							<label class="form-label" for="acr_zon">Acrónimo:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="des_pai" name="des_pai" size="25" maxlength="100" placeholder="Ingrese Descripción del País">
-						</div>
-					</div>					
-					
-					<div class="row m-3 d-flex justify-content-center align-items-end">
-						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="ali_pai">Alias:</label>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="text" id="ali_pai" name="ali_pai" size="25" maxlength="25" placeholder="Ingrese Alias del País">
+							<input class="form-control" type="text" id="acr_zon" name="acr_zon" size="25" maxlength="100" placeholder="Ingrese Descripción de la Zona Horaria">
 						</div>
 					</div>					
 					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="cti_pai">Código Telefónico:</label>
+							<label class="form-label" for="dif_zon">Diferencia horaria:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<input class="form-control" type="number" id="cti_pai" name="cti_pai" size="5" maxlength="5" placeholder="Ingrese Código Telefónico del País">
+							<input class="form-control" type="number" id="dif_zon" name="dif_zon" size="25" maxlength="25" placeholder="Ingrese Alias de la Zona Horaria">
 						</div>
 					</div>					
 					
 					<div class="row m-3 d-flex justify-content-center align-items-end">
 						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="fky_con">Continente:</label>
+							<label class="form-label" for="est_zon">Estatus:</label>
 						</div>
 						<div class="col-sm-12 col-md-7">
-							<select name="fky_con" id="fky_con" class="form-select cursor-pointer">
-								<option value="">Seleccione...</option>
-								<option value="1">América</option>
-								<option value="2">Asia</option>
-								<option value="3">África</option>
-								<option value="4">Europa</option>
-								<option value="5">Oceanía</option>
-							</select>
-						</div>
-					</div>					
-					
-					<div class="row m-3 d-flex justify-content-center align-items-end">
-						<div class="col-sm-12 col-md-5">
-							<label class="form-label" for="est_pai">Estatus:</label>
-						</div>
-						<div class="col-sm-12 col-md-7">
-							<select name="est_pai" id="est_pai" class="form-select cursor-pointer">
+							<select name="est_zon" id="est_zon" class="form-select cursor-pointer">
 								<option value="">Seleccione...</option>
 								<option value="A">Activo</option>
 								<option value="I">Inactivo</option>
