@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../../estilos/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../estilos/css/personalizados/estilos-vistas.css">
+	<title>Agregar Continente</title>
+</head>
+<body>
+	<div class="container-fluid">	
+		<div class="row mt-4 d-flex justify-content-center">
+			<div class="col-lg-8 header-personal p-4 d-flex justify-content-center">
+				<img src="../../../estilos/imagenes/logo.png" class="img-fluid w-25">
+			</div>
+		</div>
+		<div class="row mb-3 d-flex justify-content-center">
+			<div class="col-lg-8 body-personal">
+				<form class="" method="post" action="../../../../backend/controladores/ubicacion/continente.py" enctype="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-12">
+							<h3 class="bg-primary text-white text-center mt-3 mx-4 p-2 bg-titulo-formulario">Datos del Continente</h3>
+						</div>
+					</div>
+					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="nom_con">Nombre:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="nom_con" name="nom_con" size="16" maxlength="100" placeholder="Ingrese Nombre del Continente">
+						</div>
+					</div>					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="des_con">Descripción:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<input class="form-control" type="text" id="des_con" name="des_con" size="25" maxlength="100" placeholder="Ingrese Descripción del Continente">
+						</div>
+					</div>					
+					<div class="row m-3 d-flex justify-content-center align-items-end">
+						<div class="col-sm-12 col-md-5">
+							<label class="form-label" for="est_con">Estatus:</label>
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<select name="est_con" id="est_con" class="form-select cursor-pointer">
+								<option value="">Seleccione...</option>
+								<option value="A">Activo</option>
+								<option value="I">Inactivo</option>
+							</select>
+						</div>
+					</div>
+					<div class="row m-4 p-0 g-0 d-flex justify-content-center">
+							<button class="btn btn-primary btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="submit">Agregar</button>	
+							<a class="btn btn-primary btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" href="continente_listar.html">Ir al Listado</a>		
+							<input class="btn btn-primary btn-formulario m-sm-2 col-sm-12 col-md-5 col-lg-3" type="reset" value="Limpiar">					
+					</div>
+				</form>	
+			</div>
+		</div>	
+	</div>
+	<script src="../../../js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
