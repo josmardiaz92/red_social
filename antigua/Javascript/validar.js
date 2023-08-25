@@ -1,3 +1,4 @@
+//TODO solo se validan campos que se ingresen por el usuario. los de seleccion multiple no necesitan validacion.
 //TODO en este array, debe agregarse la expresion regular necesario para cada espacio a validar con su id
 const expresionesRegulares = {
     des_cat: /^[A-Za-zÀ-ÖØ-öø-ÿ\s']+$/i,
