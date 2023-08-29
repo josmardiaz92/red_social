@@ -1,6 +1,6 @@
 #!C:/Python311/python.exe
 import cgi
-import cgitb
+import cgitb #*Para ver errores
 cgitb.enable()
 import sys
 sys.path.append('c:\\xampp\\htdocs\\Github\\red_social')
