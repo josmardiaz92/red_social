@@ -40,3 +40,10 @@ class pais(bd.base_datos):
         self.conexion.commit() #*Confirmamos la ejecución de la sentencia sql
         contador=self.cursor.rowcount #*contador de resultados
         return contador #*retornamos la contador
+    def buscar(self):
+        #*Llamamos a la funcion para buscar en la base de datos
+        sql=f"""select ubicacion.pais_buscar({self.cod_pai})"""
+        self.cursor.execute(sql) #*Le decimos al cursor que deseamos ejecutar la sentencia sql
+        self.conexion.commit() #*Confirmamos la ejecución de la sentencia sql
+        lista=self.cursor.fetchall() #*Lista de resultados
+        return lista #*retornamos la lista

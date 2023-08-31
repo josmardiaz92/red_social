@@ -64,17 +64,18 @@ for pais in paises:
                 <td>{p.nom_pai.strip('""')}</td>
                 <td>{p.ali_pai}</td>
                 <td colspan="2">+{p.cti_pai}</td>
-                <td>{p.fky_con}</td>
+                <td>{p.fky_con}</td>  
                 <td>{p.est_pai}</td>
-                <td class="text-center">
+                <td colspan="2" class="text-center">
                     <a href="pais_editar.py?{p.cod_pai}"  target="_blank"><i class="fa-solid fa-eye" style="color: #001A6F" data-bs-toggle="tooltip" data-bs-placement="left" title="Ver"></i></a>
-                    |
-                    <i class="fa-solid fa-pencil" style="color: #001A6F" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar"></i>
-                    | 
+                    <span class="d-none d-xl-inline">|</span>
+                    <a href="../../../frontend/vistas/ubicacion/pais/pais_editar.py?cod_pai={p.cod_pai}"  target="_blank"><i class="fa-solid fa-pencil" style="color: #001A6F" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar"></i></a>
+                    <span class="d-none d-xl-inline">|</span>
                     <i class="fa-solid fa-trash" style="color: #001A6F" data-bs-toggle="tooltip" data-bs-placement="right" title="Borrar"></i>
                 </td>
             </tr> """
         print(fila)
+
 pie=""" </tbody>
     </table>
 </div>
